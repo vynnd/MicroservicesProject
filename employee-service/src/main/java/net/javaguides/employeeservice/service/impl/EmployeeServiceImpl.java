@@ -7,6 +7,7 @@ import net.javaguides.employeeservice.dto.APIResponseDto;
 import net.javaguides.employeeservice.dto.DepartmentDto;
 import net.javaguides.employeeservice.dto.EmployeeDto;
 import net.javaguides.employeeservice.entity.Employee;
+import net.javaguides.employeeservice.mapper.EmployeeMapper;
 import net.javaguides.employeeservice.repository.EmployeeRepository;
 import net.javaguides.employeeservice.service.APIClient;
 import net.javaguides.employeeservice.service.EmployeeService;
@@ -29,11 +30,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public EmployeeDto saveEmployee(EmployeeDto employeeDto) {
-        Employee employee = new Employee(employeeDto.getId(), employeeDto.getFirstName(), employeeDto.getLastName(), employeeDto.getEmail(), employeeDto.getDepartmentCode());
+        Employee employee = EmployeeMapper.mapToEmployee(employeeDto);
 
         Employee saveEmployee = employeeRepository.save(employee);
 
-        EmployeeDto saveEmployeeDto = new EmployeeDto(employee.getId(), employee.getFirstName(), employee.getLastName(), employee.getEmail(), employee.getDepartmentCode());
+        EmployeeDto saveEmployeeDto = EmployeeMapper.mapToEmployeeDto(saveEmployee);
         return saveEmployeeDto;
     }
 
