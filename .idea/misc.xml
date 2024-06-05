@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/organization-service/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-docker-demo/pom.xml" />
+        <option value="$USER_HOME$/Downloads/springboot-docker-course-main/springboot-restful-webservices/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-kafka-tutorial/pom.xml" />
       </list>
     </option>
   </component>

@@ -10,7 +10,9 @@
         <module name="api-gatway" />
         <module name="config-server" />
         <module name="springboot-docker-demo" />
+        <module name="springboot-restful-webservices" />
         <module name="department-service" />
+        <module name="springboot-kafka-tutorial" />
         <module name="organization-service" />
         <module name="service-registry" />
         <module name="employee-service" />
@@ -26,6 +28,8 @@
       <module name="organization-service" options="-parameters" />
       <module name="service-registry" options="-parameters" />
       <module name="springboot-docker-demo" options="-parameters" />
+      <module name="springboot-kafka-tutorial" options="-parameters" />
+      <module name="springboot-restful-webservices" options="-parameters" />
     </option>
   </component>
 </project>
